@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brides Profiles</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" href="/static/images/dress.png">
+
+</head>
+<body>
+    <header>
+        <h1>Brides Profiles</h1>
+    </header>
+
+    <button class="accordion">Menu</button>
+    <div class="panel">
+        <a href="#profile1">Bride 1 Profile</a>
+        <a href="#profile2">Bride 2 Profile</a>
+        <a href="#profile3">Bride 3 Profile</a>
+        <a href="#profile4">Bride 4 Profile</a>
+    </div>
+
+    <div class="container">
+        <!-- Bride Profile 1 -->
+        <div class="card" id="profile1">
+            <img src="/static/images/marie.jpg" alt="Bride 1">
+            <h2>Marie Turmann</h2>
+            <p>Marie is a classic bride with a love for timeless elegance. Her wedding plans include a beautiful garden ceremony followed by a grand reception.</p>
+            <a href="marie.html" class="button">View Details</a>
+        </div>
+
+        <!-- Bride Profile 2 -->
+        <div class="card" id="profile2">
+            <img src="/static/images/kathy.jpg" alt="Bride 2">
+            <h2>Kathy Martin</h2>
+            <p>Kathy's style is modern and chic. She is planning a sophisticated city wedding with contemporary touches and a minimalist decor.</p>
+            <button>View Details</button>
+        </div>
+
+        <!-- Bride Profile 3 -->
+        <div class="card" id="profile3">
+            <img src="/static/images/hailey.jpg" alt="Bride 3">
+            <h2>Hailey Hunter</h2>
+            <p>Hailey is an adventurous bride who loves nature. Her wedding will be held in a beautiful forest setting with rustic decor.</p>
+            <button>View Details</button>
+        </div>
+
+        <!-- Bride Profile 4 -->
+        <div class="card" id="profile4">
+            <img src="/static/images/sarah.jpg" alt="Bride 4">
+            <h2>Sarah Fitzpatrick</h2>
+            <p>Sarah’s wedding theme is vintage glamour. She’s incorporating classic elements and elegant details for a truly memorable event.</p>
+            <button>View Details</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Brides Profiles. All rights reserved.</p>
+    </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
